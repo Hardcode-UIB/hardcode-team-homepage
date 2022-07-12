@@ -1,24 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/* Font imports */
+@font-face {
+    font-family: 'Futura PT';
+    src: url(../fonts/futura-pt-medium.otf);
+}
 
-
+/* CSS Reset */
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Setze globale Regeln */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura PT', sans-serif;
+
+    /* background: linear-gradient(to right, white 10%, #0b1d6fa4 90%); */
 }
 
-
+/* Header formatieren, faerben, platzieren */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     background-color: #0b1d6f;
-    padding: 1em;
+    /* padding: 1em; */
+    height: 8vh;
+
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+
+
+    /* overflow: hidden; */
 }
 
 header > nav {
@@ -32,7 +46,6 @@ header > nav > ul {
 
     font-size: 1.5em;
     color: #ffe570;
-    font-weight: 700;
 }
 
 .nav-dropdown-menu {
@@ -47,4 +60,81 @@ header > nav > ul {
     border-radius: 50%;
     width: 96px;
     height: 96px;
+}
+
+
+#logo-frame {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(1.5);
+
+    margin-left: 5em;
+}
+
+
+main {
+    margin-top: 5em;
+    width: 80%;
+    margin: 5em auto 0 auto;
+    /* height: 73vh; */
+}
+
+main h1 {
+    /* letter-spacing: 0.2em; */
+    margin-bottom: 1em;
+}
+
+
+
+#mosaic {
+    height: 70vh;
+    /* background-color: blueviolet; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1em;
+
+}
+
+#mosaic div {
+    background-color: lightgray;
+    border: 5px solid grey;
+}
+
+
+main article h2 {
+    margin-top: 1em;
+}
+
+
+
+footer {
+    background-color: #0b1d6f;
+    height: 5vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    color: #ffe570;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul a {
+    color: #ffe570;
+    text-decoration: none;
 }
