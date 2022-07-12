@@ -52,7 +52,7 @@ header > nav > ul {
 ul.nav-dropdown-menu {
     display: none;
     position: absolute;
-    margin-top: 1em;
+    margin-top: 0.2em;
 }
 
 
@@ -65,12 +65,11 @@ ul.nav-dropdown-menu {
     padding: 5px;
 }
 
-nav > ul > li:hover ul{
+nav > ul > li:hover ul {
     display: block;
 }
 
-.nav-dropdown:hover span{
-
+.nav-dropdown:hover span {
     color: red;
 }
 
