@@ -110,7 +110,7 @@ li {
 }
 
 main > div > h1 {
-    padding: 35px;
+    padding: 0 35px;
     width: 100%;
     color: lightblue;
     font-size: 60px;
@@ -120,9 +120,8 @@ main > div > h1 {
     overflow: hidden;
 
     animation: 
-        typing-title 8s steps(15, end) infinite forwards;
-      /*   blinking-cursor 0.5s step-end infinite forwards;  */
-
+        typing-title 8s steps(15, end) infinite forwards alternate,
+        blinking-cursor 0.5s step-end infinite forwards; 
     border-right: 0.2em solid #0b1d6f;
 
     
@@ -136,6 +135,14 @@ main > div > h1 {
 
     to {
         width: 100%;
+    }
+}
+@keyframes blinking-cursor {
+    from {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #0b1d6f;
     }
 }
 
