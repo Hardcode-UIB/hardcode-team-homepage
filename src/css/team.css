@@ -104,6 +104,41 @@ li {
 
 /* -----------------MAIN------------------ */
 
+.main-title {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+main > div > h1 {
+    padding: 35px;
+    width: 100%;
+    color: lightblue;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: 
+        typing-title 8s steps(15, end) infinite forwards;
+      /*   blinking-cursor 0.5s step-end infinite forwards;  */
+
+    border-right: 0.2em solid #0b1d6f;
+
+    
+}
+
+/* ---------------- KEYFRAME -------------------------- */
+@keyframes typing-title {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
 
 
 
