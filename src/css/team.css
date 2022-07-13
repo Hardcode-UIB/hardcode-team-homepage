@@ -216,7 +216,8 @@ main > div > h1 {
     cursor: pointer;
 
     animation-name: circle-rotate;
-    animation-play-state: paused; 
+    animation-play-state: paused;
+    
 }
 .slider span:hover img {
     cursor: pointer;
