@@ -125,7 +125,7 @@ main > div > h1 {
 
     animation: 
         typing-title 8s steps(15, end) infinite forwards alternate,
-        blinking-cursor 0.5s step-end infinite forwards; 
+        blinking-cursor 0.8s step-end infinite forwards; 
     border-right: 0.2em solid #0b1d6f;
 
     
@@ -213,13 +213,18 @@ main > div > h1 {
 
 /* Animationspause beim hovern über das Bild */
 .slider:hover {
+    cursor: pointer;
+
     animation-name: circle-rotate;
     animation-play-state: paused; 
 }
 .slider span:hover img {
+    cursor: pointer;
+
     transform: translateY(-50px) scale(1.2);
-    filter: grayscale(100%);                    /* HOVER FILTER für Bilder */
+   /*  filter: grayscale(100%);  */                   /* HOVER FILTER für Bilder */
     /* filter: blur(5px); */
+    filter: contrast(30%);
 
     
 }
@@ -228,10 +233,11 @@ main > div > h1 {
     transform: translateY(-50px) scale(1.2);
     display: block;    
     font-size: 30px;
-    color: coral;
+    color: #0b1d6f;
     font-weight: 800;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
+
 
 /* --------------------------TEAM GALLERY END----------------------- */
 
