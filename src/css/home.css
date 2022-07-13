@@ -1,7 +1,12 @@
 @import url(header.css);
 
 /* Main */
+body {
 
+    font-family: 'Futura PT', sans-serif;
+
+    /* background: linear-gradient(to right, white 10%, #0b1d6fa4 90%); */
+}
 
 main {
     
