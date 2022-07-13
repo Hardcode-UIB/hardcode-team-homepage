@@ -125,7 +125,7 @@ main > div > h1 {
 
     animation: 
         typing-title 8s steps(15, end) infinite forwards alternate,
-        blinking-cursor 0.5s step-end infinite forwards; 
+        blinking-cursor 0.8s step-end infinite forwards; 
     border-right: 0.2em solid #0b1d6f;
 
     
@@ -233,14 +233,12 @@ main > div > h1 {
     transform: translateY(-50px) scale(1.2);
     display: block;    
     font-size: 30px;
-    color: coral;
+    color: #0b1d6f;
     font-weight: 800;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 
-:hover {
-    
-}
+
 
 /* --------------------------TEAM GALLERY END----------------------- */
 
