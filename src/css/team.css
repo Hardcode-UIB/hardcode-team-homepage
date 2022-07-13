@@ -1,0 +1,264 @@
+/* Font imports */
+@font-face {
+    font-family: 'Futura PT';
+    src: url(../fonts/futura-pt-medium.otf);
+}
+
+/* CSS Reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setze globale Regeln */                      /* Background hinzugefügt */
+body {
+    font-family: 'Futura PT', sans-serif;
+    background: linear-gradient(to right top, #dc5f1c, #0f2027);
+    /* background: linear-gradient(to right, white 10%, #0b1d6fa4 90%); */
+}
+
+/* Header formatieren, faerben, platzieren */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #0b1d6f;
+    /* padding: 1em; */
+    height: 8vh;
+
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+
+
+    /* overflow: hidden; */
+}
+
+header > nav {
+    width: 50%;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+    font-size: 1.5em;
+    color: #ffe570;
+}
+
+/*  */
+ul.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 0.2em;
+}
+
+
+.nav-dropdown-menu li {
+    border: 2px solid black;
+    background-color: brown;
+    display: block;
+    color: white;
+    width: 100%;
+    padding: 5px;
+}
+
+nav > ul > li:hover ul {
+    display: block;
+}
+
+.nav-dropdown:hover span {
+    color: red;
+}
+
+nav li {
+    padding: 5px 10px;
+}
+li {
+   list-style: none; 
+}
+
+#header-logo {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+}
+
+
+#logo-frame {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(1.5);
+
+    margin-left: 5em;
+}
+
+/* -----------------MAIN------------------ */
+                                        /* Fit Content für MAIN und width */
+main {      
+    width: 100%;
+    height: fit-content;
+}
+.main-title {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+main > div > h1 {
+    padding: 0 35px;
+    width: 100%;
+    color: lightblue;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: 
+        typing-title 8s steps(15, end) infinite forwards alternate,
+        blinking-cursor 0.5s step-end infinite forwards; 
+    border-right: 0.2em solid #0b1d6f;
+
+    
+}
+
+/* ---------------- KEYFRAME -------------------------- */
+@keyframes typing-title {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+@keyframes blinking-cursor {
+    from {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #0b1d6f;
+    }
+}
+
+/* --------------------TEAM GALLERY START------------------*/
+
+
+.team-gallery {
+
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: circle-rotate 30s linear infinite;
+   /*  perspective: 100em;  */
+}
+
+@keyframes circle-rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slider span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+    transition: 2s;
+}
+
+.slider h3 {
+    display: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 200px;     /* Um den Text mittig auszurichten */
+}
+
+/* Animationspause beim hovern über das Bild */
+.slider:hover {
+    animation-name: circle-rotate;
+    animation-play-state: paused; 
+}
+.slider span:hover img {
+    transform: translateY(-50px) scale(1.2);
+    filter: grayscale(100%);                    /* HOVER FILTER für Bilder */
+    /* filter: blur(5px); */
+
+    
+}
+
+.slider span:hover h3 {
+    transform: translateY(-50px) scale(1.2);
+    display: block;    
+    font-size: 30px;
+    color: coral;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+/* --------------------------TEAM GALLERY END----------------------- */
+
+
+
+
+
+/* ----------------FOOTER--------------- */
+
+footer {
+    background-color: #0b1d6f;
+    height: 5vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    color: #ffe570;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul a {
+    color: #ffe570;
+    text-decoration: none;
+}
