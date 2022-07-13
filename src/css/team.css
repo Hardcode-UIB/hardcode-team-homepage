@@ -213,13 +213,18 @@ main > div > h1 {
 
 /* Animationspause beim hovern über das Bild */
 .slider:hover {
+    cursor: pointer;
+
     animation-name: circle-rotate;
     animation-play-state: paused; 
 }
 .slider span:hover img {
+    cursor: pointer;
+
     transform: translateY(-50px) scale(1.2);
-    filter: grayscale(100%);                    /* HOVER FILTER für Bilder */
+   /*  filter: grayscale(100%);  */                   /* HOVER FILTER für Bilder */
     /* filter: blur(5px); */
+    filter: contrast(30%);
 
     
 }
@@ -231,6 +236,10 @@ main > div > h1 {
     color: coral;
     font-weight: 800;
     letter-spacing: 0.2em;
+}
+
+:hover {
+    
 }
 
 /* --------------------------TEAM GALLERY END----------------------- */
