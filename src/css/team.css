@@ -168,7 +168,7 @@ main > div > h1 {
     height: 200px;
     transform-style: preserve-3d;
     animation: circle-rotate 30s linear infinite;
-    perspective: 100em;
+    /* perspective: 100em; */
 }
 
 @keyframes circle-rotate {
@@ -204,8 +204,24 @@ main > div > h1 {
     transition: 2s;
 }
 
+.slider h3 {
+    display: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 200px;     /* Um den Text mittig auszurichten */
+}
+
 .slider span:hover img {
     transform: translateY(-50px) scale(1.2);
+    filter: grayscale(100%);                    /* HOVER FILTER für Bilder */
+    filter: blur(5px);
+}
+
+.slider span:hover h3 {
+    transform: translateY(-50px) scale(1.2);
+    display: block;    
+    font-size: 25px;
+    color: white;
 }
 
 /* --------------------------TEAM GALLERY END----------------------- */
