@@ -124,7 +124,7 @@ main > div > h1 {
     overflow: hidden;
 
     animation: 
-        typing-title 8s steps(15, end) infinite forwards alternate,
+        typing-title 8s steps(22, end) infinite forwards alternate,
         blinking-cursor 0.8s step-end infinite forwards; 
     border-right: 0.2em solid #0b1d6f;
 
@@ -154,8 +154,8 @@ main > div > h1 {
 
 
 .team-gallery {
-
-    height: 55vh;
+    
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,11 +164,11 @@ main > div > h1 {
 
 .slider {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     transform-style: preserve-3d;
     animation: circle-rotate 30s linear infinite;
-   /*  perspective: 100em;  */
+    /* perspective: 150em;  */
 }
 
 @keyframes circle-rotate {
@@ -189,7 +189,7 @@ main > div > h1 {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    transform: rotateY(calc(var(--i)*24deg)) translateZ(500px);
 }
 
 .slider span img{
@@ -222,7 +222,7 @@ main > div > h1 {
 .slider span:hover img {
     cursor: pointer;
 
-    transform: translateY(-50px) scale(1.2);
+    transform: translateY(-50px) scale(1.5);
    /*  filter: grayscale(100%);  */                   /* HOVER FILTER für Bilder */
     /* filter: blur(5px); */
     filter: contrast(30%);
