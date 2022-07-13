@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="FbW_WD_22_D04-B">
+    <meta name="description" content="Team Homepage fuer den DCI Kurs FbW_WD_22_D04-B aka HardCode">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HardCode: Accessibility</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/accessibility-styles.css">
+</head>
+
+
+<body>
+    <header>
+        <div id="logo-frame">
+            <img id="header-logo" src="img/hardcode_logo_96_96_circle.png" alt="Das Logo fuer die Klasse 'HardCode'">
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-dropdown"><span>Home</span> 
+                    <ul class="nav-dropdown-menu">
+                        <li>Design einer Page</li>
+                        <li>Wahrnehmungstheorie</li>
+                        <li>Farbenlehre</li>
+                    </ul>
+                </li>
+
+                <li class="nav-dropdown"><span>Team</span> 
+                    <ul class="nav-dropdown-menu">
+                        <li>Member A</li>
+                        <li>Member B</li>
+                        <li>Member C</li>
+                    </ul>
+                </li>
+
+                <li class="nav-dropdown"><span>Links</span> 
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="https://developer.mozilla.org/en-US/">MDN Dokumentation</a></li>
+                        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+                        <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>accessibility - barrierefreiheit</h1>
+
+        <h2>Was ist ein Screenreader? </h2>
+        <div id="screenreader-container">
+            
+                <iframe width="660" height="415" src="https://www.youtube.com/embed/dEbl5jvLKGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            
+                <article>
+                    <p>Screenreader ermöglichen es Blinden oder Menschen mit Sehschwäche das Internet zu nutzen.</p>
+                    <p id="emphasis">In diesem 4:45min Clip wir veranschaulicht:</p>
+                    <p> Kleine strukturelle Fehler im Webdesign können große Auswirkungen bei der Nutzung von Screenreader haben.</p>
+                </article>
+           
+        </div>
+
+
+        <h2>Möglichkeiten eine Web-Accessibility zu ermöglichen</h2>
+        <ul>
+            <h3>Benutze Überschriften dazu um deinen Inhalt zu organisieren</h3>
+
+            <li>Headings ordentlich anwenden</li>
+            <li>Nur 1 x h1 Heading benutzen</li>
+            <li>Headings zur Übersicht und zum Organisieren benutzen</li>
+            <li>Headings nicht überspringen (z.B. von h1 zu h3 springen) sonst denken Menschen die einen Screen Reader benutzen das sie was übersprungen haben</li>
+        </ul>
+
+        <ul>
+            <h3>Füge einen guten alt-text für deine Fotos ein</h3>
+
+            <li>Ausführliche alt texte für Fotos benutzen</li>
+            <li>Besonders wichtig bei informativen Bildern (Infografiken)</li>
+            <li>Ausnahme dafür sind wenn die Bilder nur als dekoration dienen</li>
+            <li>Wenn ein Bild als einziger content für einen link benutzt wird, wird der Screen Reader nur den file namen vorlesen wenn kein alt text eingefügt wird.</li>
+        </ul>
+
+        <ul>
+            <h3>Gib deinen Links gute Beschreibungen</h3>
+
+            <li>Wenn man links einfügt auf der eigenen Website sollte man genau beschreiben wo der Link hinführen wird wenn man ihn drückt</li>
+            <li>Nur ein "klick hier" wird nicht als beschreibend genug erkannt und ist somit für einen Screen Reader ineffektiv.</li>
+            <li>So wie sehende Leser eine Seite nach einer verlinkung absuchen, suchen auch Seh-Gestörte Menschen Seiten nach verlinkungen ab. Hierbei können Menschen die Screen Reader benutzen oft den Inhalt im Text der zum Link führt übersehen.</li>
+            <li>z.B. nicht schreiben: "KLICK HIER um mehr über uns zu erfahren"</li>
+            <li>sondern: "Um mehr über uns zu erfahren, können sie HIER KLICKEN"</li>
+        </ul>
+
+        <ul>
+            <h3>Farben mit Vorsicht auswählen</h3>
+            <li>Die am häufigsten vorkommende Sehschwäche ist die rot-grün Schwäche, die etwa 8% der Bevölkerung betrifft.</li>
+            <li>Daher vorsicht beim nutzen von Farben die rot oder grün untergemischt haben. Vor allem beim hervorheben von wichtigen Ausfüllfeldern</li>
+            <li>Andere Gruppen von Seh-Beeinträchtigten Menschen nutzen</li>
+        </ul>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
