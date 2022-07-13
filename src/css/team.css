@@ -124,7 +124,7 @@ main > div > h1 {
     overflow: hidden;
 
     animation: 
-        typing-title 8s steps(15, end) infinite forwards alternate,
+        typing-title 8s steps(22, end) infinite forwards alternate,
         blinking-cursor 0.8s step-end infinite forwards; 
     border-right: 0.2em solid #0b1d6f;
 
