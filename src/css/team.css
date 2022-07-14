@@ -160,11 +160,8 @@ main > div > h1 {
     overflow: hidden;
 
     animation: 
-<<<<<<< HEAD
         typing-title 8.7s steps(16, end) infinite forwards alternate,
-=======
         typing-title 9s steps(15, end) infinite forwards alternate,
->>>>>>> 872c98e248737bfdb9caef8238eee9fa4d1d08fc
         blinking-cursor 1s step-end infinite forwards; 
     border-right: 0.1em solid #0b1d6f;
     text-transform: uppercase;
