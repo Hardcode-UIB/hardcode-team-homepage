@@ -12,6 +12,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+                /* Variable für Header-höhe erstellt */
+:root {
+    --header-hight-size: 17vh;
+    --container-hight-size: 100vh
+}
 
 /* Setze globale Regeln */
 
@@ -19,7 +24,6 @@ body {
 
     font-family: 'Futura PT', sans-serif;
     background-color: lightgrey;
-
     
 }
 
@@ -32,10 +36,11 @@ header {
 /* 
     background-color: rgb(237, 228, 102); */
     /* padding: 1em; */
-    height: 2.0vh;
+    /* height: 2.0vh; */
+    height: var(--header-hight-size);         /* Header-höhe Variable */
 
-    margin-top: 9vh;
-    margin-bottom: 6vh;
+    /* margin-top: 9vh;
+    margin-bottom: 6vh; */
 
 
     /* overflow: hidden; */
@@ -144,6 +149,7 @@ main {
 .main-title {
     margin: 0 auto;
     width: fit-content;
+
 }
 
 main > div > h1 {
@@ -191,7 +197,7 @@ main > div > h1 {
 
 .team-gallery {
     
-    height: 75vh;
+    height: 79vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -317,7 +323,11 @@ aside > ul > li {
     padding: 0.5em;
 }
 
+/* PAGES */
 
+.container {
+    height: var(--container-hight-size);
+}
 
 
 /* ----------------FOOTER--------------- */
@@ -334,9 +344,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 8pt;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    
 }
 
 footer ul {
