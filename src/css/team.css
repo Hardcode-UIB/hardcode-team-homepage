@@ -259,7 +259,6 @@ main > div > h1 {
     
 }
 .slider span:hover img {
-    cursor: pointer;
 
     transform: translateY(-50px) scale(1.5);
    /*  filter: grayscale(100%);  */                   /* HOVER FILTER für Bilder */
