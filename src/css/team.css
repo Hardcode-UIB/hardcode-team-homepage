@@ -263,9 +263,9 @@ main > div > h1 {
 
     transform: translateY(-50px) scale(1.5);
    /*  filter: grayscale(100%);  */                   /* HOVER FILTER für Bilder */
-   
-    filter: contrast(40%); 
-    /* opacity: 1; */
+    
+    filter: contrast(50%); 
+    opacity: 1;
 
 }
 
