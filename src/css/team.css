@@ -288,10 +288,9 @@ aside {
     height: fit-content;
     position: fixed;
 
-    top: 20vh;
+    top: 22vh;
     left: 0;
 
-   
     font-size: 14pt;
     letter-spacing: 0.1em;
     margin-left: 5em;
@@ -306,10 +305,13 @@ aside a {
     color: rgb(5, 101, 170);
 }
 
+aside a:hover {
+    text-decoration: underline;
+}
+
 aside > ul > li {
     padding: 0.5em;
 }
-
 
 
 
