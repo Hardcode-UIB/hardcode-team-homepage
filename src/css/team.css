@@ -265,7 +265,7 @@ main > div > h1 {
    /*  filter: grayscale(100%);  */                   /* HOVER FILTER für Bilder */
   
     filter: contrast(40%); 
-    /* opacity: 1; */
+    opacity: 1;
 
 }
 
