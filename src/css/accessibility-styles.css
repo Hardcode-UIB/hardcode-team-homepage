@@ -1,33 +1,64 @@
+@font-face {
+    
+    src: url(../fonts/Futura\ PT/);
+    font-family: 'Futura PT';
+}
+
+
+/* CSS Reset */
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+ 
+}
+
+html, body {
+
+    font-family: 'Futura PT';
+
 }
 
 h1 {
-    font-size: 0;
+    color: #FFFFFF;
+    text-align: left;
+    
 }
 
 h2 {
-    margin-bottom: 5vh;
-    font-size: 26pt;
+    
+    font-size: 20pt;
+    margin: 1%;
+    
 }
 
+details ul li { 
+    margin-top: 1%;
+    font-size: 12pt;
+
+}
+
+
+/* --------------Upper-Section---------- */
+
 #screenreader-container {
-    background-color: #0D2673;
+    width: 90vw;
+    margin: 0 auto;
+    background-color: #000000;
 
     border: solid;
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
-    grid:
-    ".  HL      .   .       .   " 0.5fr
-    ".  clip    .   text    .   " 1fr
-    ".  clip    .   text    .   " 1fr
-    ".  clip    .   .       .   " 1fr
+/*     grid:
+    ".  .       HL      .       .   " 0.5fr
+    ".  .       clip    .   text    .   " 1fr
+    ".  .       clip    .   text    .   " 1fr
+    ".  .       clip    .   .       .   " 1fr
     ".  .       .   .       .   " 0.5fr
-    /1fr 1fr 1fr 3fr 1fr;    
+    /1fr 1fr 1fr 3fr 1fr;     */
 
     
 }
@@ -35,43 +66,71 @@ h2 {
 #screenreader-container h2 {
     /* HL = Headline */
     grid-area: HL;
-    color: #F2D16D;
+    color: #FFFFFF;
     text-align: center;
-    margin: 5%;
+    
     
 }
 
 #screenreader-container > iframe {
     grid-area: clip;
+    margin: 0 auto;
 }
 
 #screenreader-container > article {
-    color: #F2D16D;
-    font-size: 20pt;
-    grid-area: text;
-    text-align: justify;
-    align-items: center;
+    
+    text-align: left;
+
+    color: #FFFFFF;
+    
+    font-size: 16pt;
+
+    margin: 2%;
+  
 }
+
+
+/* -----------Lower-Section------------- */
 
 #content-container {
-    background-color: #cfcaaf;
-    color: #213676;
+    width: 90vw;
+    margin: 5% auto;
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #FFFFFF;
+    color: black;
+
+    border: #000000 soli 2px;
 }
 
 
+summary {
 
-
+    font-size: 18pt;
+    font-weight: 800;
+    
+}
 
 
 
 /* ------helper------- */
 
-/*  */
+
 #emphasis {
+
     font-weight: 700;
-    margin: 5% 0;
+    
 }
 
-article p {
-    line-height: 1.5em;
+
+
+.responsive-iframe {
+    position: relative;
+
+    width: 80%;
+    height: 55vh;
+    
 }
