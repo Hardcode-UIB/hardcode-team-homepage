@@ -1,0 +1,42 @@
+h1 {
+    font-size: 0;
+}
+
+h2 {
+    margin-bottom: 5vh;
+    font-size: 20pt;
+}
+
+#screenreader-container {
+    background-color: #0D2673;
+
+    border: solid;
+    display: grid;
+
+    grid:
+    ".  .   .   .   .   " 0.5fr
+    ". clip . text  .   " 1fr
+    ". clip . text  .   " 1fr
+    ".  .   .   .   .   " 0.5fr
+    /1fr 1fr 1fr 2fr 1fr;    
+
+    
+}
+
+#screenreader-container > iframe {
+    grid-area: clip;
+}
+
+#screenreader-container > article {
+    color: #F2D16D;
+    font-size: 17pt;
+    grid-area: text;
+}
+
+
+/* ------helper------- */
+
+/*  */
+#emphasis {
+    font-weight: 700;
+}

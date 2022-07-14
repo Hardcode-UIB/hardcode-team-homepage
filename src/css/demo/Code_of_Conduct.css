@@ -48,19 +48,21 @@ header > nav > ul {
     color: #ffe570;
 }
 
+
 /*  */
 ul.nav-dropdown-menu {
     display: none;
     position: absolute;
     margin-top: 0.2em;
+    border: 2px solid #0b1d6f;
 }
 
 
 .nav-dropdown-menu li {
-    border: 2px solid black;
-    background-color: brown;
+    border-bottom: 2px solid #0b1d6f;
+    background-color: #fff;
     display: block;
-    color: white;
+    color: black;
     width: 100%;
     padding: 5px;
 }
@@ -68,9 +70,12 @@ ul.nav-dropdown-menu {
 nav > ul > li:hover ul {
     display: block;
 }
-
+.nav-dropdown-menu li,
+.nav-dropdown-menu li a {
+    color: black;
+}
 .nav-dropdown:hover span {
-    color: red;
+    color: #fff;
 }
 
 nav li {
@@ -101,45 +106,47 @@ li {
 
     margin-left: 5em;
 }
-
-
-main {
-    margin-top: 5em;
-    width: 80%;
-    margin: 5em auto 0 auto;
-    /* height: 73vh; */
+.container {
+    max-width: 1190px;
+    width: 100%;
+    margin: 0 auto;
 }
-
-main h1 {
-    /* letter-spacing: 0.2em; */
-    margin-bottom: 1em;
+h1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
-
-
-
-#mosaic {
-    height: 70vh;
-    /* background-color: blueviolet; */
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-
-    gap: 1em;
-
+.main-content h1 {
+    margin-bottom: 8px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: darkgoldenrod;
 }
-
-#mosaic div {
-    background-color: lightgray;
-    border: 5px solid grey;
+.main-content h3 {
+    font-size: 18px;
+    color: #0b1d6f;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
-
-
-main article h2 {
-    margin-top: 1em;
+.main-content p {
+    font-size: 16px;
+    line-height: calc(16px * 1.8);
+    margin-bottom: 16px;
 }
-
-
+.main-content ul {
+    padding-left: 16px;
+}
+.main-content ul li{
+    list-style: decimal;
+    margin-bottom: 15px;
+}
+.main-content ul li ul {
+    padding: 8px;
+    margin-top: 8px;
+}
+.main-content ul li ul li {
+    list-style: upper-latin;
+}
 
 footer {
     background-color: #0b1d6f;
