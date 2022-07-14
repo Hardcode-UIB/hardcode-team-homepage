@@ -26,7 +26,7 @@ h2 {
     ".  clip    .   text    .   " 1fr
     ".  clip    .   text    .   " 1fr
     ".  clip    .   .       .   " 1fr
-    ".  .   .   .   .   " 0.5fr
+    ".  .       .   .       .   " 0.5fr
     /1fr 1fr 1fr 3fr 1fr;    
 
     
@@ -53,6 +53,16 @@ h2 {
     align-items: center;
 }
 
+#content-container {
+    background-color: #cfcaaf;
+    color: #213676;
+}
+
+
+
+
+
+
 
 /* ------helper------- */
 
@@ -60,4 +70,8 @@ h2 {
 #emphasis {
     font-weight: 700;
     margin: 5% 0;
+}
+
+article p {
+    line-height: 1.5em;
 }

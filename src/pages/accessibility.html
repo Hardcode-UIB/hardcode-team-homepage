@@ -9,15 +9,15 @@
 
     <title>HardCode: Accessibility</title>
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/accessibility-styles.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/accessibility-styles.css">
 </head>
 
 
 <body>
     <header>
         <div id="logo-frame">
-            <img id="header-logo" src="img/hardcode_logo_96_96_circle.png" alt="Das Logo fuer die Klasse 'HardCode'">
+            <img id="header-logo" src="/src/img/hardcode_logo_96_96_circle.png" alt="Das Logo fuer die Klasse 'HardCode'">
         </div>
         <nav>
             <ul>
@@ -49,61 +49,75 @@
     </header>
 
     <main>
-        <h1>accessibility - barrierefreiheit</h1>
+
 
         
         <div id="screenreader-container">
-            <h2 id="reader">Was ist ein Screenreader? </h2>
+            <h2 id="reader">Ein Screenreader! Was ist  </h2>
                 
             <iframe width="660" height="415" src="https://www.youtube.com/embed/dEbl5jvLKGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
             
             <article>
                 <p>Screenreader ermöglichen es Blinden oder Menschen mit Sehschwäche das Internet zu nutzen.</p>
-                <p> </p>
+                
                 <p id="emphasis">Dieser 4:45min Clip veranschaulicht:</p>
-                <p> </p>
+                
                 <p> Kleine strukturelle Fehler im Webdesign können große Auswirkungen bei der Nutzung von Screenreader haben.</p>
             </article>
            
         </div>
 
+        <div id="content-container">
 
         <h2>Möglichkeiten eine Web-Accessibility zu ermöglichen</h2>
-        <ul>
-            <h3>Benutze Überschriften dazu um deinen Inhalt zu organisieren</h3>
 
+        <h3>Benutze Überschriften dazu um deinen Inhalt zu organisieren</h3>
+        <ul>
             <li><p>Headings ordentlich anwenden</p></li>
             <li><p>Nur 1 x h1 Heading benutzen</p></li>
             <li><p>Headings zur Übersicht und zum Organisieren benutzen</p></li>
             <li><p>Headings nicht überspringen (z.B. von h1 zu h3 springen) sonst denken Menschen die einen Screen Reader benutzen das sie was übersprungen haben</p></li>
         </ul>
-
+        
+        <h3>Füge einen guten alt-text für deine Fotos ein</h3>
         <ul>
-            <h3>Füge einen guten alt-text für deine Fotos ein</h3>
-
-            <li>Ausführliche alt texte für Fotos benutzen</li>
-            <li>Besonders wichtig bei informativen Bildern (Infografiken)</li>
-            <li>Ausnahme dafür sind wenn die Bilder nur als dekoration dienen</li>
-            <li>Wenn ein Bild als einziger content für einen link benutzt wird, wird der Screen Reader nur den file namen vorlesen wenn kein alt text eingefügt wird.</li>
+            <li><p>Ausführliche alt texte für Fotos benutzen</p></li>
+            <li><p>Besonders wichtig bei informativen Bildern (Infografiken)</p></li>
+            <li><p>Ausnahme dafür sind wenn die Bilder nur als dekoration dienen</p></li>
+            <li><p>Wenn ein Bild als einziger content für einen link benutzt wird, wird der Screen Reader nur den file namen vorlesen wenn kein alt text eingefügt wird.</p></li>
         </ul>
 
+        <h3>Gib deinen Links gute Beschreibungen</h3>
         <ul>
-            <h3>Gib deinen Links gute Beschreibungen</h3>
-
-            <li>Wenn man links einfügt auf der eigenen Website sollte man genau beschreiben wo der Link hinführen wird wenn man ihn drückt</li>
-            <li>Nur ein "klick hier" wird nicht als beschreibend genug erkannt und ist somit für einen Screen Reader ineffektiv.</li>
-            <li>So wie sehende Leser eine Seite nach einer verlinkung absuchen, suchen auch Seh-Gestörte Menschen Seiten nach verlinkungen ab. Hierbei können Menschen die Screen Reader benutzen oft den Inhalt im Text der zum Link führt übersehen.</li>
-            <li>z.B. nicht schreiben: "KLICK HIER um mehr über uns zu erfahren"</li>
-            <li>sondern: "Um mehr über uns zu erfahren, können sie HIER KLICKEN"</li>
+            <li><p>Wenn man links einfügt auf der eigenen Website sollte man genau beschreiben wo der Link hinführen wird wenn man ihn drückt</p></li>
+            <li><p>Nur ein "klick hier" wird nicht als beschreibend genug erkannt und ist somit für einen Screen Reader ineffektiv.</p></li>
+            <li><p>So wie sehende Leser eine Seite nach einer verlinkung absuchen, suchen auch Seh-Gestörte Menschen Seiten nach verlinkungen ab. Hierbei können Menschen die Screen Reader benutzen oft den Inhalt im Text der zum Link führt übersehen.</p></li>
+            <li><p>z.B. nicht schreiben: "KLICK HIER um mehr über uns zu erfahren"</p></li>
+            <li><p>z.B. nicht schreiben: "KLICK HIER um mehr über uns zu erfahren"</p></li>
         </ul>
 
+        <h3>Farben mit Vorsicht auswählen</h3>
         <ul>
-            <h3>Farben mit Vorsicht auswählen</h3>
             <li>Die am häufigsten vorkommende Sehschwäche ist die rot-grün Schwäche, die etwa 8% der Bevölkerung betrifft.</li>
             <li>Daher vorsicht beim nutzen von Farben die rot oder grün untergemischt haben. Vor allem beim hervorheben von wichtigen Ausfüllfeldern</li>
-            <li>Andere Gruppen von Seh-Beeinträchtigten Menschen nutzen</li>
+            <li>Andere Gruppen an Menschen mit Behinderungen benutzen Farben z.B. auch um Inhalte voneinander zu unterscheiden und zu organisieren, wie z.B. Menschen mit Lernbehinderung</li>
+            <li>Um beide Grupen zu befriediegen sollte man sicher gehen das man auch andere visuelle indikatoren, wie z.B. asterisk oder Fragezeichen beutzt</li>
+            <li>Zum unterscheiden von blocks of Content auch sicher gehen das man visuelle Trennungen durch Whitespace oder Border hervorhebt</li>
         </ul>
+
+        <ul>
+            <h3>Formulare für Accessibility designen</h3>
+            <li>Wenn Formular Felder nicht richtig gelabelt sind liest der Screen Reader diese nicht richtig</li>
+            <li>Dieses kann für einen Seh-Geschädigten Menschen dann darin enden das dieser nicht weiss was in das jeweilige Feld einzufügen ist.</li>
+            <li>Jedes Feld sollte ordentlich gelabelt sein, wie z.B. Name oder Vorname oder Nachname. </li>
+            <li>Der Nutzer sollte auch in der Lage sein das komplette Formular mit der Tab Taste durchtabben und ausfüllen zu können bevor er am Ende zum Senden Knopf kommt</li>
+            <li>Felder die ähnlich sind oder zusammen gehören sollte man dann auch zusammen gruppieren</li>
+            <li>Diese Art der organisation des Formulars hilft dem Screen Reader User auch dabei beim Fortschritt mitzuhalten und kann auch kontext bereitstellen der sonst beim ausfüllen des Formulars verloren geht</li>
+            <li></li>
+        </ul>
+
+    </div>
     </main>
 
     <footer>
