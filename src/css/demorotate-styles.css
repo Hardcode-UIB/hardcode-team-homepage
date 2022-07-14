@@ -44,7 +44,7 @@ body {
           transform-style: preserve-3d;
 }
 
-.square {
+/*.square {
   width: 100px;
   height: 100px;
   /*background-color: green;*/
@@ -57,7 +57,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  font-size: 80px;
+  font-size: 80px;*/
   
 }
 
@@ -115,7 +115,7 @@ body {
   }
 }
 
-/*.lineSquare {
+ /*.lineSquare {
   width: 100px;
   height: 100px;
   border: 2px dashed #D50000;
@@ -153,9 +153,9 @@ body {
   height: 1em;
   margin-right: 0.25em;
   border: 2px dashed #D50000;
-}*/
+}
 
-/*.outerContainer > span:nth-child(4)::before {
+.outerContainer > span:nth-child(4)::before {
   display: inline-block;
   content: '';
   width: 1em;
