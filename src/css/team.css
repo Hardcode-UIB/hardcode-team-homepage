@@ -281,7 +281,37 @@ main > div > h1 {
 
 /* --------------------------TEAM GALLERY END----------------------- */
 
+/* Aside mit der Namensliste  */
 
+aside {
+    width: 7vw;
+    height: fit-content;
+    position: fixed;
+
+    top: 22vh;
+    left: 0;
+
+    font-size: 14pt;
+    letter-spacing: 0.1em;
+    margin-left: 5em;
+}
+
+aside > ul {
+    list-style: none;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(5, 101, 170);
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+aside > ul > li {
+    padding: 0.5em;
+}
 
 
 
