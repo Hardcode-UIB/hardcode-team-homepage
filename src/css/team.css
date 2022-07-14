@@ -149,15 +149,16 @@ main > div > h1 {
     width: 100%;
     color: rgb(128, 194, 216);
     font-size: 60px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1;
 
     white-space: nowrap;
     overflow: hidden;
 
     animation: 
-        typing-title 8.7s steps(18, end) infinite forwards alternate,
+        typing-title 8.7s steps(16, end) infinite forwards alternate,
         blinking-cursor 1s step-end infinite forwards; 
     border-right: 0.1em solid #0b1d6f;
+    text-transform: uppercase;
 
 }
 
