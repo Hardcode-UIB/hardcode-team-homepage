@@ -243,10 +243,11 @@ main > div > h1 {
 }
 
 .slider h3 {
-    display: none;
+    /* display: none; */
     text-transform: uppercase;
     text-align: center;
-    line-height: 200px;     /* Um den Text mittig auszurichten */
+    line-height: 150px;     /* Um den Text mittig auszurichten */
+    transition: transform 3s;   /* Das Überschrift langsam */
 }
 
 /* Animationspause beim hovern über das Bild */
@@ -269,7 +270,7 @@ main > div > h1 {
 }
 
 .slider span:hover h3 {
-    transform: translateY(-50px) scale(1.2);
+    transform: translateY(80px) scale(1.2);
     display: block;    
     font-size: 30px;
     color: #0b1d6f;
