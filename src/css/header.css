@@ -60,12 +60,12 @@ nav span {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 12pt;
-    color: #0b1d6fb4;
+    color: #0b2b6fd1;
 }
 nav span:hover {
     color:#03104a;
-    font-size: 13pt;
-    transition-duration: 1s;
+    /* font-size: 13pt;
+    transition-duration: 1s; */
 }
 /* ------Drobdown----- */
 .nav-dropdown-menu li {
@@ -76,7 +76,7 @@ nav span:hover {
     padding: 2px 2px 0px 3px;
     font-size: 10pt;
     letter-spacing: 0.1em;
-    left: -10px;
+    left: -12px;
     top: 100%;
     margin: 6% 0% 0% 0%;
 }
