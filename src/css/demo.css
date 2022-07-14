@@ -391,79 +391,86 @@ main{
         }
     }
     
-    @keyframes ani-box2 {
-        0% {
-            transform: translateX(300px) rotateX(-10deg) rotateY(-80deg) ;
-        }
-        40% {
-            transform: translateX(0) rotateX(-10deg) rotateY(-80deg);
-        }
-        60% {
-            transform: translateX(30px) rotateX(-10deg) rotateY(-80deg);
-        }
-        100% {
-            transform: translateX(-400px) rotateX(-10deg) rotateY(-80deg);
-        }
+@keyframes ani-box2 {
+    0% {
+        transform: translateX(300px) rotateX(-10deg) rotateY(-80deg) ;
     }
+    40% {
+        transform: translateX(0) rotateX(-10deg) rotateY(-80deg);
+    }
+    60% {
+        transform: translateX(30px) rotateX(-10deg) rotateY(-80deg);
+    }
+    100% {
+        transform: translateX(-400px) rotateX(-10deg) rotateY(-80deg);
+    }
+}
     
-    @keyframes ani-box3 {
-        0% {
-            transform: translateX(300px) rotateX(-10deg) rotateY(-80deg) ;
-        }
-        40% {
-            transform: translateX(0) rotateX(-10deg) rotateY(-80deg);
-        }
-        60% {
-            transform: translateX(30px) rotateX(-10deg) rotateY(-80deg);
-        }
-        100% {
-            transform: translateX(-400px) rotateX(-10deg) rotateY(-80deg);
-        }
+@keyframes ani-box3 {
+    0% {
+           transform: translateX(300px) rotateX(-10deg) rotateY(-80deg) ;
     }
+    40% {
+           transform: translateX(0) rotateX(-10deg) rotateY(-80deg);
+    }
+    60% {
+        transform: translateX(30px) rotateX(-10deg) rotateY(-80deg);
+    }
+    100% {
+        transform: translateX(-400px) rotateX(-10deg) rotateY(-80deg);
+    }
+}
 
 /* --------------------------Bubbles-CSS-------------------- */
 
-    .container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
     
-    .bubbles {
-        position: relative;
-        display: flex;
-    }
+.bubbles {
+    position: relative;
+    display: flex;
+}
     
-    .bubbles span {
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: #4fc3dc;
-        margin: 0 4px;
-        border-radius: 50%;
-        box-shadow: 0 0 0 10px #4fc3dc44,
-        0 0  50px #4fc3dc,
-        0 0  100px #4fc3dc;
-        animation: animate 15s linear infinite;
-        animation-duration: calc(125s / var(--i));
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #00b7ff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #00b7ff44,
+    0 0  50px #00b7ff,
+    0 0  100px #00b7ff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));    
+}
+
+.bubbles span:nth-child(3n+1) {
+    background: #ff0000;
+    box-shadow: 0 0 0 10px #ff000044,
+    0 0 50px #ff0000,
+    0 0 100px #ff0000;
+}
     
+.bubbles span:nth-child(3n+2) {
+    background: #00bd00;
+    box-shadow: 0 0 0 10px #00bd0044,
+    0 0 50px #00bd00,
+    0 0 100px #00bd00;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);   
     }
-    .bubbles span:nth-child(even) {
-        background: red;
-        box-shadow: 0 0 0 10px darkred,
-         0 0 50px red,
-         0 0 100px red;
+    100% {
+        transform: translateY(-10vh) scale(1); 
     }
-    
-    @keyframes animate {
-        0% {
-         transform: translateY(100vh) scale(0);   
-        }
-        100% {
-           transform: translateY(-10vh) scale(1); 
-        }
-    }
+}
 
 /* ------------Footer--------- */
 
