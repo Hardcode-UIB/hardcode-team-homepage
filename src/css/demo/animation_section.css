@@ -118,11 +118,11 @@ main h1 {
 
 
 #animations {
-    height: 70vh;
+    height: fit-content;
     border: 5px solid grey;
 }
 
-/* --------------Loading Screen------------------- */
+/* ---------------------------Loading Screen-------------------------- */
 
 #loading-screen {
     width: 300px;
@@ -219,7 +219,7 @@ main h1 {
     color: white;
     overflow: hidden;
     letter-spacing: 0.5em;
-    animation: dot-reveal 2s 1s linear infinite;
+    animation: dot-reveal 2s linear infinite;
 }
 
 @keyframes loading-screen-animation-red {
@@ -264,9 +264,167 @@ main h1 {
     }
 }
 
-/* ------------------------------------------------------------------- */
+/* ------------------------------boxes-------------------------------- */
 
+#boxes {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    perspective: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
+#box-container {
+    
+}
+
+.wrapper {
+    transform-style: preserve-3d;
+    position: absolute;
+    transform: rotateX(-10deg) rotateY(-80deg);
+}
+
+.box1 {
+   left: 70px;
+   animation: ani-box1 4s ease-in-out infinite;
+   z-index: 10;
+}
+
+.box1::before {
+    content: "";
+    height: 100px;
+    width: 30px;
+    background-color: #ff0000;
+    position: absolute;
+    transform: translateX(50px) translateY(70px) translateZ(-12px) rotateY(90deg) rotateX(90deg);
+    filter: blur(10px);
+    box-shadow: 0 0 0 5px #ff000033,
+    0 0 0 10px #ff000022,
+    0 0 0 20px #ff000011,
+    0 0 20px #ff0000,
+    0 0 50px #ff0000;
+}
+
+.box2::before {
+    content: "";
+    height: 100px;
+    width: 30px;
+    background-color: #00bd00;
+    position: absolute;
+    transform: translateX(50px) translateY(70px) translateZ(-12px) rotateY(90deg) rotateX(90deg);
+    filter: blur(10px);
+    box-shadow: 0 0 0 5px #00bd0033,
+    0 0 0 10px #00bd0022,
+    0 0 0 20px #00bd0011,
+    0 0 20px #00bd00,
+    0 0 50px #00bd00;
+}
+
+.box3::before {
+    content: "";
+    height: 100px;
+    width: 30px;
+    background-color: #00b7ff;
+    position: absolute;
+    transform: translateX(50px) translateY(70px) translateZ(-12px) rotateY(90deg) rotateX(90deg);
+    filter: blur(10px);
+    box-shadow: 0 0 0 5px #00b7ff33,
+    0 0 0 10px #00b7ff22,
+    0 0 0 20px #00b7ff11,
+    0 0 20px #00b7ff,
+    0 0 50px #00b7ff;
+}
+
+.box2 {
+    animation: ani-box2 4s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+
+.box3 {
+    left: 110px;
+    animation: ani-box3 4s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+
+.side-box1 {
+    background-color: #ff0000;
+    border: 1px solid white;
+}
+
+.side-box2 {
+    background-color: #00bd00;
+    border: 1px solid white;
+}
+
+.side-box3 {
+    background-color: #00b7ff;
+    border: 1px solid white;
+}
+
+.front {
+    height: 100px;
+    width: 100px;
+}
+
+.right {
+    height: 100px;
+    width: 30px;
+    transform: translate3d(85px, -100px, -15px) rotateY(90deg);
+}
+
+.top {
+    height: 30px;
+    width: 100px;
+    transform: translate3d(0px, -215px, -15px) rotateX(90deg);
+}
+
+@keyframes ani-box1 {
+    0% {
+        transform: translateX(300px) rotateX(-10deg) rotateY(-80deg) ;
+    }
+    40% {
+        transform: translateX(0) rotateX(-10deg) rotateY(-80deg);
+    }
+    60% {
+        transform: translateX(30px) rotateX(-10deg) rotateY(-80deg);
+    }
+    100% {
+        transform: translateX(-300px) rotateX(-10deg) rotateY(-80deg);
+    }
+}
+
+@keyframes ani-box2 {
+    0% {
+        transform: translateX(300px) rotateX(-10deg) rotateY(-80deg) ;
+    }
+    40% {
+        transform: translateX(0) rotateX(-10deg) rotateY(-80deg);
+    }
+    60% {
+        transform: translateX(30px) rotateX(-10deg) rotateY(-80deg);
+    }
+    100% {
+        transform: translateX(-300px) rotateX(-10deg) rotateY(-80deg);
+    }
+}
+
+@keyframes ani-box3 {
+    0% {
+        transform: translateX(300px) rotateX(-10deg) rotateY(-80deg) ;
+    }
+    40% {
+        transform: translateX(0) rotateX(-10deg) rotateY(-80deg);
+    }
+    60% {
+        transform: translateX(30px) rotateX(-10deg) rotateY(-80deg);
+    }
+    100% {
+        transform: translateX(-300px) rotateX(-10deg) rotateY(-80deg);
+    }
+}
 
 /* ------------------------------------------------------------------- */
 
