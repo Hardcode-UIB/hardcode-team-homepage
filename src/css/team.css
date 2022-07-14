@@ -152,7 +152,7 @@ main > div > h1 {
     color: rgb(128, 194, 216);
 
     font-family: 'Major Mono Display', monospace;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 60px;
     letter-spacing: 0.1;
 
