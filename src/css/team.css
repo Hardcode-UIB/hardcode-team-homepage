@@ -20,7 +20,7 @@ body {
     font-family: 'Futura PT', sans-serif;
     background-color: lightgrey;
 
-    /* background: linear-gradient(to right, white 10%, #0b1d6fa4 90%); */
+    
 }
 
 /* Header formatieren, faerben, platzieren */
@@ -281,7 +281,12 @@ main > div > h1 {
 
 /* --------------------------TEAM GALLERY END----------------------- */
 
-/* Aside mit der Namensliste  */
+
+
+
+
+
+/* ---------------------Aside mit der Namensliste ---------------- */
 
 aside {
     width: 7vw;
@@ -312,6 +317,7 @@ aside a:hover {
 aside > ul > li {
     padding: 0.5em;
 }
+
 
 
 
