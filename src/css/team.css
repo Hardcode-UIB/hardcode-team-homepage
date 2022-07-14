@@ -4,6 +4,8 @@
     src: url(../fonts/Futura\ PT/);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 /* CSS Reset */
 *, *::after, *::before {
     margin: 0;
@@ -148,16 +150,24 @@ main > div > h1 {
     padding: 0 35px;
     width: 100%;
     color: rgb(128, 194, 216);
+
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
     font-size: 60px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1;
 
     white-space: nowrap;
     overflow: hidden;
 
     animation: 
-        typing-title 8.7s steps(18, end) infinite forwards alternate,
+<<<<<<< HEAD
+        typing-title 8.7s steps(16, end) infinite forwards alternate,
+=======
+        typing-title 9s steps(15, end) infinite forwards alternate,
+>>>>>>> 872c98e248737bfdb9caef8238eee9fa4d1d08fc
         blinking-cursor 1s step-end infinite forwards; 
     border-right: 0.1em solid #0b1d6f;
+    text-transform: uppercase;
 
 }
 
@@ -232,6 +242,8 @@ main > div > h1 {
     object-fit: cover;
     
     transition: 2s;
+    
+    opacity: 0.8;
 }
 
 .slider h3 {
@@ -254,8 +266,9 @@ main > div > h1 {
 
     transform: translateY(-50px) scale(1.5);
    /*  filter: grayscale(100%);  */                   /* HOVER FILTER für Bilder */
-    /* filter: blur(5px); */
-    filter: contrast(30%);
+   
+    filter: contrast(40%); 
+    /* opacity: 1; */
 
 }
 
