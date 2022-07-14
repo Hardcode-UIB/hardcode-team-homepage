@@ -65,7 +65,8 @@ nav span {
 nav span:hover {
     color:#03104a;
     /* font-size: 13pt;
-    transition-duration: 1s; */
+    transition-duration: 3s;
+    position: absolute; */
 }
 /* ------Drobdown----- */
 .nav-dropdown-menu li {
@@ -83,14 +84,13 @@ nav span:hover {
 .nav-dropdown-menu li:hover {
     background-color: #dfe2f0a1;
     cursor: pointer;
-    border: 1px solid; 
     color:#03104a;
-    border-radius: 10% / 50%;
+    
 }
 nav > ul > li:hover ul {
     display: block;
 }
-a {
+header nav a {
     font-size: 10pt;
     color: rgb(5, 101, 170);
     text-decoration: none;
