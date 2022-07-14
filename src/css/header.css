@@ -11,14 +11,6 @@
     box-sizing: border-box;
 }
 
-/* Setze globale Regeln */
-
-body {
-
-    font-family: 'Futura PT', sans-serif;
-
-    /* background: linear-gradient(to right, white 10%, #0b1d6fa4 90%); */
-}
 
 /* Header formatieren, faerben, platzieren */
 header {
@@ -26,110 +18,82 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-right: 1%;
-/* 
-    background-color: rgb(237, 228, 102); */
-    /* padding: 1em; */
-    height: 2.0vh;
-
+    height: 3.0vh;
     margin-top: 9vh;
     margin-bottom: 6vh;
-
-
-    /* overflow: hidden; */
 }
 
-/* LOGO */
 
+
+/*-------- LOGO --------*/
 #header-logo {
-    border-radius: 50%;
     width: 96px;
     height: 96px;
-}
-
-
-#logo-frame {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     transform: scale(0.8);
-
     margin-left: 5em;
 }
-
-header > nav {
-    width: 35%;
+#header-logo:hover {
+    transform: scale(0.87);
+    transition-duration: 0.8s;
 }
 
+
+
+/*-------- NAV --------*/
+header > nav {
+    width: 35%;
+    cursor: pointer;
+}
 header > nav > ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-
-    font-size: 0.5em;
-   
+    font-size: 0.5em; 
 }
-
-
-
-/* ------------ NAV ----------------*/
 ul.nav-dropdown-menu {
     display: none;
     position: absolute;
     margin-top: 0.2em;  
-    font-size: 10pt;
-    
-     
+    padding: 5px 10px; 
 }
-
 nav span {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 12pt;
-    color: rgb(5, 101, 170);
+    color: #0b2b6fd1;
 }
-.nav-dropdown:hover span {
+nav span:hover {
     color:#03104a;
+    /* font-size: 13pt;
+    transition-duration: 3s;
+    position: absolute; */
 }
+/* ------Drobdown----- */
 .nav-dropdown-menu li {
-    /* border: 2px solid black; */
-    background-color: #fff;
     display: block;
-    color: #03104a;
-/*     width: 100%; */
-    padding: 2px  2px 0px 3px;
-    text-transform: uppercase;
+    position: relative;
+    background-color: #fff;
+    color: rgb(5, 101, 170);
+    padding: 2px 2px 0px 3px;
     font-size: 10pt;
     letter-spacing: 0.1em;
-    position: relative;
-    left: -3px;
+    left: -12px;
     top: 100%;
     margin: 6% 0% 0% 0%;
+    
 }
-
-
 .nav-dropdown-menu li:hover {
-    color: #0b1d6f;
-    background-color: #d1d7f0;
+    background-color: #dfe2f0a1;
     cursor: pointer;
+    color:#03104a;
+    
 }
-
 nav > ul > li:hover ul {
     display: block;
 }
-
-
-
-
-nav li {
-    padding: 5px 10px;
+header nav a {
+    font-size: 10pt;
+    color: rgb(5, 101, 170);
+    text-decoration: none;
 }
 
-li {
-   list-style: none; 
-}
