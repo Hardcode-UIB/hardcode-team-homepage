@@ -197,7 +197,7 @@ main > div > h1 {
 
 .team-gallery {
     
-    height: 79vh;
+    height: 77vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -297,6 +297,7 @@ aside {
     width: 7vw;
     height: fit-content;
     position: fixed;
+    z-index: 10;
 
     top: 22vh;
     left: 0;
